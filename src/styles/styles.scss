@@ -1,0 +1,71 @@
+$white: hsl(0, 0%, 100%);
+$pink: hsl(275, 100%, 97%);
+$purple: #AD28EB;
+$purple-grayish: hsl(292, 16%, 49%);
+$purple-dark: hsl(292, 42%, 14%);
+
+$mobile: 375px;
+$desktop: 1440px;
+
+@function rem($px) {
+  $rem: calc($px / 16) + rem;
+  @return $rem;
+}
+
+@font-face {
+  font-family: "Work Sans", sans-serif;
+  src: local("Work Sans"), url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans", sans-serif;
+  src: local("Work Sans"), url("./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf");
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+:root {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  color: $purple-dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  padding: 5rem 1.5rem;
+
+  background-repeat: no-repeat;
+  background-color: $pink;
+  background-position: center top;
+  background-size: 100%;
+  background-image: url('/background-pattern-mobile.svg');
+}
+
+@media (min-width: 990px) {
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: contain;
+    background-image: url('/background-pattern-desktop.svg');
+  }
+}
+
+@import 'faq';
+@import 'accordion';

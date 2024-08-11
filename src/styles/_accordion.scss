@@ -1,0 +1,55 @@
+.accordion {
+  padding-block: 1rem;
+}
+
+.accordion:not(:last-of-type) {
+  border-bottom: 1px solid $pink;
+}
+
+
+.accordion-quastion {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+
+  background-color: unset;
+  border: none;
+
+  cursor: pointer;
+}
+
+.accordion-quastion:hover {
+  color: $purple;
+}
+
+.accordion-quastion::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  flex-shrink: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/icon-plus.svg");
+}
+
+.accordion-quastion--open::after {
+  background-image: url("/icon-minus.svg");
+}
+
+.accordion-answer {
+  color: $purple-grayish;
+  line-height: 1.4;
+
+  padding-top: 1rem;
+}

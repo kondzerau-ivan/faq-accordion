@@ -1,0 +1,40 @@
+.faq {
+  padding: 2rem 1.5rem;
+
+  background-color: white;
+  border-radius: .5rem;
+
+  transition: 1s;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $purple-dark;
+
+  margin-bottom: 1rem;
+}
+
+.faq-heading::before {
+  content: "";
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  
+  margin-right: 1.5rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/icon-star.svg");
+}
+
+.faq-list {
+  list-style: none;
+}
+
+@media (min-width: 990px) {
+  .faq {
+    width: rem(400);
+  }
+}
