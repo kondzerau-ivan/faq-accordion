@@ -21,5 +21,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/kondzerau-ivan/faq-accordion)
-- Live Site URL: [Add live site URL here](https://kondzerau-ivan.github.io/faq-accordion/)
+- Solution URL: [Solution URL here](https://github.com/kondzerau-ivan/faq-accordion)
+- Live Site URL: [Live site URL here](https://kondzerau-ivan.github.io/faq-accordion/)
